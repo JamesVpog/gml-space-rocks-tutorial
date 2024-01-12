@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description boss shoots its own bullets with cooldown
 
 //bounces off invisible walls
 move_bounce_solid(true)

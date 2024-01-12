@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description hit by boss bullet and die
 
 //restart the room when player dies
 with (obj_game)
