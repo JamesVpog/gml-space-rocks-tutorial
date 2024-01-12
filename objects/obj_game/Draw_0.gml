@@ -1,17 +1,16 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description draw all rooms
 
 draw_set_font(fnt_text)
 //draws depending on the room
 
  switch (room)
 {
-case rm_game:
+case rm_game: //score that updates
     draw_text(50, 20, "SCORE: " + string(score));
     draw_text(50, 40, "LIVES: " + string(lives));
     break;
 
-case rm_start:
+case rm_start: // start screen 
 	draw_set_halign(fa_center); //centers the text
     var c = c_yellow;
 	draw_text_transformed_color(room_width / 2, 100, "SPACE ROCKS", 3, 3, 0, c, c, c, c, 1);
@@ -26,7 +25,7 @@ case rm_start:
 	>>PRESS ENTER TO START<<");
     break;
 
-case rm_win:
+case rm_win: //win screen
 	draw_set_halign(fa_center);
 	var c = c_lime;
 	draw_text_transformed_colour(room_width / 2, 200, "YOU WON!", 3, 3, 0, c, c, c, c, 1);
@@ -35,7 +34,7 @@ case rm_win:
     
     break;
 
-case rm_gameover:
+case rm_gameover: //lose screen
     draw_set_halign(fa_center);
     var c = c_red;
     draw_text_transformed_colour(room_width / 2, 150, "GAME OVER", 3, 3, 0, c, c, c, c, 1);

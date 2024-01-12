@@ -1,32 +1,38 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description destroy bullet and astroid
+
+
 
 audio_play_sound(rockdestroy, 1, false);
-score += 10;
+score += 10; //score per asteroid
 
 instance_destroy() //destroys bullet
 
-with (other)
+with (other) //in context of asteroid
 {
-instance_destroy() //destroys asteroid
-if (sprite_index == spr_astrd_large)
-	{
-	repeat(2)
+	
+	instance_destroy() //destroys asteroid
+
+	//split large asteroids into 2 medium asteroids
+	if (sprite_index == spr_astrd_large)
 		{
-		var new_asteroid = instance_create_layer(x, y, "Instances", obj_astrd);
-		new_asteroid.sprite_index = spr_astrd_med;
+		repeat(2)
+			{
+			var new_asteroid = instance_create_layer(x, y, "Instances", obj_astrd);
+			new_asteroid.sprite_index = spr_astrd_med;
+			}
 		}
-	}
-else if (sprite_index == spr_astrd_med)
-	{
-	repeat(2)
+	//split medium asteroids into 2 small asteroids
+	else if (sprite_index == spr_astrd_med)
 		{
-		var new_asteroid = instance_create_layer(x, y, "Instances", obj_astrd);
-		new_asteroid.sprite_index = spr_astrd_small;
+		repeat(2)
+			{
+			var new_asteroid = instance_create_layer(x, y, "Instances", obj_astrd);
+			new_asteroid.sprite_index = spr_astrd_small;
+			}
 		}
-	}
-repeat(10)
-	{
-	instance_create_layer(x, y, "Instances", obj_debris);
-	}
+	//create visual debris
+	repeat(10)
+		{
+		instance_create_layer(x, y, "Instances", obj_debris);
+		}
 }

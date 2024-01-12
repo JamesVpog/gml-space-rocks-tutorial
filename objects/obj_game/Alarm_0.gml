@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description asteroid spawner
 
 
 //only spawn asteroids in the rm_game
@@ -8,6 +7,7 @@ if (room != rm_game)
 exit;
 }
 
+	
 //spawn asteroids in the boundaries so player does not see them
 if (choose(0,1) == 0)
 {

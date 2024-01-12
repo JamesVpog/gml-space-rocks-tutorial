@@ -1,6 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description start music and asteroids
 //only play the music once, when it restarts if player dies
 
 
@@ -20,5 +18,5 @@ if (room == rm_game)
 	    var yy = choose(irandom_range(0, room_height * 0.3), irandom_range(room_height * 0.7, room_height));
 	    instance_create_layer(xx, yy, "Instances", obj_astrd);
 	    }
-alarm[0] = 60; //create new ones after 60 steps/frames away
+	alarm[0] = 10; //create new ones after 60 steps/frames away
 }

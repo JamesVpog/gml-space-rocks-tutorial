@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description controls and shoot
+
 if (keyboard_check(vk_left))
 {
 	image_angle += 5;

@@ -1,6 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description fade debris away
 
+//make it slowly transparent
 image_alpha -= 0.01
 
 if (image_alpha <= 0) 

@@ -1,7 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description initial game score and lives
 
-score = 0;
+score = 490;
 lives = 3;
 
 randomize();

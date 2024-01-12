@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description init debris speed and dir
 
 direction = irandom_range(0, 359);
 

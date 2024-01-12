@@ -1,3 +1,3 @@
 /// @description initial speed of bullet
 
-speed = 6
+speed = 1
