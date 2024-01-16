@@ -19,4 +19,5 @@ if (room == rm_game)
 	    instance_create_layer(xx, yy, "Instances", obj_astrd);
 	    }
 	alarm[0] = 10; //create new ones after 60 steps/frames away
+	alarm[2] = 10; //powerup thing
 }

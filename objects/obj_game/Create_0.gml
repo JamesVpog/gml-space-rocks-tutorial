@@ -1,6 +1,6 @@
 /// @description initial game score and lives
 
-score = 0;
+score = 450;
 lives = 3;
 
 randomize();
